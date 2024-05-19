@@ -4,6 +4,26 @@
 
 @layer utilities {
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: skewX(-10deg);
+      transform: translateY(48px);
+    }
+    100% {
+      opacity: 1;
+      transform: skewX(-10deg);
+      transform: translateY(0);
+    }
+  }
+
+  .animate-appear {
+    animation: appear 1s ease-out forwards;
+  }
+
+  .skew-constant {
+    transform: skewX(-10deg);
+  }
 }
 @layer components {
   body {
@@ -13,8 +33,5 @@
   }
   html {
     height: -webkit-fill-available;
-  }
-  h1 {
-    transform: skewX(-10deg);
   }
 }

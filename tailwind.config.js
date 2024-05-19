@@ -17,17 +17,7 @@ export default {
         default: '800px'
       }
     },
-    extend: {
-      animation: {
-        appear: 'appear 1s ease forwards'
-      },
-      keyframes: {
-        appear: {
-          '0%': { transform: 'translateY(48px)', opacity: 0 },
-          '100%': { transform: 'translateY(0)', opacity: 1 }
-        }
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
